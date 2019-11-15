@@ -16,8 +16,6 @@ body {
 .container-fluid {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     height: 100%;
     min-height:100%;
     display: flex;
@@ -27,8 +25,6 @@ body {
 
 .container {
     display: flex;
-    width: 100%;
-    height: 100%; /* For at least Firefox */
     justify-content: center;
 }
 
@@ -93,8 +89,6 @@ body {
     padding-left: 15px;
 }
 
-
-
 .footerbar {
     margin-top:auto; 
     width: 100%;
@@ -104,14 +98,24 @@ body {
     align-items: flex-end;
     line-height: 40px;
     font-size: 13px;
+    background:#f2f2f2;
+    border-top: 1px solid#e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .locale, .footerbar__nav {
     display: flex;
     width: 100%;
+    color:rgba(0,0,0,.54);
+    padding-left: 27px;
+    padding-right: 27px;
 }
 
 .footerbar__nav {
     display: flex;
     justify-content: space-between;
+}
+
+.footerbar__nav a + a {
+    padding-left: 9px;
 }
