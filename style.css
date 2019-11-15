@@ -1,9 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display:flex; 
+    flex-direction: column;
+}
+
+#main {
+    min-height: 100%;
+    display: flex;
+}
+
 .container-fluid {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     height: 100%;
+    min-height:100%;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
 }
 
 .container {
@@ -51,8 +70,7 @@
     border: 1px solid
     #f2f2f2;
     border-radius: 4px;
-    color:
-    #5F6368;
+    color: #5F6368;
     font-family: arial,sans-serif;
     font-size: 14px;
     margin: 11px 4px;
@@ -75,11 +93,15 @@
     padding-left: 15px;
 }
 
+
+
 .footerbar {
+    margin-top:auto; 
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-end;
     line-height: 40px;
     font-size: 13px;
 }
@@ -87,4 +109,9 @@
 .locale, .footerbar__nav {
     display: flex;
     width: 100%;
+}
+
+.footerbar__nav {
+    display: flex;
+    justify-content: space-between;
 }
