@@ -22,10 +22,20 @@
     height: 92px;
 }
 
+.search-field {
+    margin-top: 2em;
+}
+
 .search-field__form {
-    padding: 6px;
-    /* border: none; */
-    margin-top: 8px;
-    margin-right: 16px;
     font-size: 17px;
-  }
+    width: 27.5%;
+    padding: 5px 8px 0 16px;
+    padding-left: 16px;
+    padding-left: 14px;
+    border-radius: 24px;
+    background:#fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    height: 40px;
+    margin: 0 auto;
+}
